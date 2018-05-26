@@ -1,0 +1,109 @@
+<view class='main'>
+
+
+  <!-- <view class='top'>
+    辽石化软考报名
+  </view> -->
+
+  <view class='btns'>
+    <view bindtap='change' id='0' class="{{active=='0'?'active':'none'}}">个人报名</view>
+    <!-- <view bindtap='change' id='1' class="{{active=='1'?'active':'none'}}">信息查询</view>  -->
+    <view bindtap='change' id='1' class="{{active=='1'?'active':'none'}}">成绩查询</view>
+  </view>
+
+
+
+  <swiper current="{{current}}" bindchange="swiperChange">
+    <swiper-item class="sign">
+      <navigator url="../sign/sign">
+        <image src='../img/sign.png' mode='aspectFit' class='signImage'></image>
+      </navigator>
+      <view class='message' wx:for="{{signeddata}}" wx:if="{{index<3}}" wx:key="">
+        <view class='type'>
+          <view class='icon'>
+            <image src="../img/message.png"></image>
+          </view>
+          <view class='text'>报名</view>
+        </view>
+        <view class='data'>
+          <view class='me_title'>
+            <view>报名成功</view>
+          </view>
+          <view class='contain'>
+            <view class='left'>
+              <view class='con'> 学号为:{{item.studentId}}的同学报名成功</view>
+              <view class='date'>{{item.date}}</view>
+            </view>
+            <view class='right'>
+              <view class='read'>{{item.state}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='bot'>没有更多报名信息</view>
+    </swiper-item>
+    <!-- <swiper-item>
+
+
+
+      </swiper-item>  -->
+    <swiper-item class="find">
+      <view class='person'>
+
+
+
+        <view class='ruankaologo'>
+          <image src='../img/logo.png' mode='aspectFit'>
+          </image>
+        </view>
+
+
+
+        <view class='table'>
+          <view class="th input">
+            <view class='tr'>准考证号:</view>
+            <view class='tr'>
+              <input type='number' placeholder='准考证号'></input>
+            </view>
+          </view>
+
+          <view class="th input">
+            <view class='tr'>证 件 号:</view>
+            <view class='tr'>
+              <input type='number' placeholder='证 件 号'></input>
+            </view>
+          </view>
+
+          <view class="th input">
+            <view class='tr'>考试时间:</view>
+            <view class='tr'>
+              <input type='number' placeholder='考试时间'></input>
+            </view>
+          </view>
+
+          <view class="th input">
+            <view class='tr'>姓 名:</view>
+            <view class='tr'>
+              <input type='number' placeholder='姓    名'></input>
+            </view>
+          </view>
+
+          <view class="th findGrade">
+            <button bindtap='findgarades'>查询</button>
+          </view>
+        </view>
+
+
+
+
+
+
+
+
+
+
+      </view>
+
+    </swiper-item>
+  </swiper>
+</view>

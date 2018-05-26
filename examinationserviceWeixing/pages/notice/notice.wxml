@@ -1,0 +1,9 @@
+<!--pages/notice/notice.wxml-->
+<view class='notice'>
+<view class='title'>Notice
+ <icon type="cancel" size="40" bindtap='cancel'/>
+</view>
+<view class='content'>欢迎使用由辽宁石油化工大学计算机与通信工程学院学生开发的辽石化考试报名系统，您现在选择的项目是附加项目，是一个小的发表自己意见的小平台，因为我们要获取一下用户的基本信息，比如用户头像，用户的id，用户的微信名称，用户在微信里登记的省市地址等一些非敏感信息，所以希望您手动点击下方的授权按钮，授权我们获取，如果您坚决不让我们获取您的私人非敏感信息，您可以直接点击右上方的叉叉，您可以使用匿名的方式来发表您的看法吗，撩月团队真诚的希望您能多发表自己的观点和看法，让我们一起构建一个良好的辽石化考试经验交流环境。</view>
+
+  <button open-type="getUserInfo" bindgetuserinfo='savekey'>授权</button>
+</view>

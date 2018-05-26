@@ -1,0 +1,276 @@
+/* pages/main/main.wxss */
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  width: 100%;
+  height: 130rpx;
+  line-height: 150rpx;
+  text-align: center;
+  color: white;
+  background-color: #00a4ff;
+}
+
+swiper {
+  width: 100%;
+  height: 1000rpx;
+  border-radius: 10rpx;
+}
+
+.sign{
+    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);   */
+     background: url('http://www.hcyang.top/bg/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.find{
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);  
+}
+
+.title {
+  width: 40%;
+  margin-left: 30%;
+  text-align: center;
+  font-style: italic;
+  color: white;
+  font-size: 40rpx;
+  font-weight: 800;
+  padding: 10rpx;
+  border-bottom: #303e46 solid 5rpx;
+}
+
+.btns {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+  padding-top: 8rpx;
+}
+
+.btns view {
+  width: 30%;
+  height: 60rpx;
+  text-align: center;
+  border-radius: 12rpx;
+}
+
+.active {
+  background-color: gray;
+  border-bottom: #00a4ff solid 5rpx;
+}
+
+/* table 组件封装*/
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.table .th {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  background-color: #edf2f5;
+  border-radius: 20rpx;
+  margin-top: 10rpx;
+  border-bottom: #677075 solid 1rpx;
+  border-left: #989ea2 solid 0.5rpx;
+}
+.table .th .tr {
+  padding-left: 20rpx;
+  /* width: 220rpx; */
+  padding-right: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+input {
+  width: 320rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-style: italic;
+}
+
+/* //sign */
+.sign{
+  width: 100%;
+  height: 100%;
+}
+
+.signImage{
+  position: fixed;
+  top: 85%;
+  left: 75%;
+  width: 20%;
+  height:100rpx;
+
+}
+.message {
+  margin-top: 30rpx;
+  width: 96%;
+  height: 250rpx;
+  margin-left: 2%;
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.type {
+  width: 15%;
+  height: 100%;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  /* background-color: wheat; */
+   /* background: linear-gradient(#c8dcf0, #fff); */
+     /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);    */
+  background-image: linear-gradient(to top, #44cef6 50%, #f00056 10%, #faff72 100%);  
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20rpx;
+  /* border-bottom-left-radius: 20rpx; */
+  /* background-color: #788aff; */
+   /* background: linear-gradient(#c8dcf0, #fff); */
+  padding-top: 30%;
+}
+
+.icon image {
+  width: 70%;
+  margin-left: 15%;
+  height: 80rpx;
+}
+
+.text {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: white;
+  /* border-top-left-radius: 20rpx; */
+  border-bottom-left-radius: 20rpx;
+  /* background-color: #788aff; */
+}
+
+.data {
+  width: 85%;
+  height: 100%;
+  padding-left: 3%;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  
+}
+
+.me_title {
+  width: 100%;
+  height: 30%;
+  color: #00e09e;
+  font-weight: 100;
+  border-top-right-radius: 20rpx;
+  /* border-bottom-right-radius: 20rpx; */
+  /* background-color: white; */
+  line-height: 80rpx;
+}
+
+.contain {
+  width: 100%;
+  height: 70%;
+  /* border-top-right-radius: 20rpx; */
+  border-bottom-right-radius: 20rpx;
+  /* background-color: palegreen; */
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 70%;
+  height: 100%;
+  /* border-top-right-radius: 20rpx; *//* border-bottom-right-radius: 20rpx;  */
+  /* background-color: white; */
+  color: #424c50;
+  font-style: italic;
+  font-size: 30rpx;
+  padding-right: 10%;
+}
+
+.right {
+  width: 30%;
+  height: 100%;
+  /* border-top-right-radius: 20rpx; */
+  border-bottom-right-radius: 20rpx;
+  /* background-color: white; */
+}
+
+.read {
+  font-size: 30rpx;
+  position: relative;
+  top: 50%;
+  width: 70%;
+  margin-left: 8%;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #3abc38;
+  background-color: #ecf8eb;
+   border-radius: 10rpx; 
+  border: 5rpx solid #3abc38;
+  text-align: center;
+}
+
+.con {
+  width: 80%;
+
+}
+
+.date {
+  position: relative;
+  top: 20%;
+   left: 2%;
+}
+
+
+.title view{
+  position: relative;
+  left: 2%;
+}
+
+
+.ruankaologo{
+  width: 50%;
+  margin-left: 25%;
+  height: auto;
+  padding-top: 100rpx;
+}
+
+.ruankaologo image{
+  
+  width: 100%;
+  height: 200rpx;
+}
+
+ .findGrade button{
+  margin-top: 20rpx;
+  width: 60%;
+  margin-left: 20%;
+  background-color: blanchedalmond;
+  border-radius: 20rpx;
+}
+
+.bot{
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  font-style: initial;
+  color: #4a4b4a;
+  margin-top: 40rpx;
+}

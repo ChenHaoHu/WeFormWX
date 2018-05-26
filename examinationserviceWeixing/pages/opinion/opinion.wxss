@@ -1,0 +1,199 @@
+/* pages/opinion/opinion.wxss */
+
+.top {
+  width: 100%;
+  height: 130rpx;
+  line-height: 150rpx;
+  text-align: center;
+  color: white;
+  background-color: #00a4ff;
+}
+
+.choose {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.choose1 {
+  margin-left: 30rpx;
+  font-size: 50rpx;
+}
+
+.choose2 {
+  margin-left: 40rpx;
+  color: #4c2069;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.user {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.user .image {
+  width: 30%;
+  height: 100%;
+  padding-right: 40rpx;
+}
+
+.user .image image {
+  width: 60%;
+  height: 100rpx;
+  float: right;
+  border-radius: 100rpx;
+}
+
+.userData {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name {
+  font-size: 40rpx;
+}
+
+.intro {
+  font-size: 30rpx;
+  color: #cacaca;
+}
+.date{
+ position: absolute;
+  right: 30rpx;
+  font-size: 20rpx;
+
+}
+
+.triangle {
+  width: 100%;
+  height: 30rpx;
+  background-color: white;
+}
+
+.triangle image {
+  width: 10%;
+  height: 100%;
+  margin-left: 15%;
+}
+
+.contain {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  background-color: #f3f3f3;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  padding: 20rpx;
+  white-space:pre-wrap;
+  text-align: justify;
+}
+
+.add {
+  position: fixed;
+  width: 20%;
+  z-index: 3;
+  top: 85%;
+  left: 75%;
+}
+
+.add image {
+  width: 100%;
+  height: 80rpx;
+  z-index: 99;
+}
+
+.operation {
+  margin-top: 3rpx;
+
+  float: right;
+  width:40%;
+  height: 70rpx;
+ display: flex;
+ flex-direction: row;
+ padding-bottom: 30rpx;
+ 
+}
+.zan{
+   padding: 30rpx;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.opinion{
+  padding: 30rpx;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.zan  image , .opinion image{
+  padding-right: 13rpx;
+  height: 70rpx;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.queslist {
+  width: 90%;
+  height: auto;
+  padding-top: 30rpx;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.list_item {
+  align-self: center;
+  height: auto;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  background-color: paleturquoise;
+  font-size: 50rpx;
+  color: #ff7200;
+  padding: 20rpx;
+}
+
+.item_contain {
+  height: auto;
+  padding: 20rpx;
+  align-self: center;
+  background-color: #b2abe5;
+  text-align: justify;
+}
+
+
+scroll-view{
+
+  height: 800px;
+}

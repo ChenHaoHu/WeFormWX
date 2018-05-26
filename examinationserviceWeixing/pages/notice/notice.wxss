@@ -1,0 +1,44 @@
+.notice{
+  position: fixed;
+  z-index: 100;
+  width: 90%;
+  margin-left: 5%;
+background-color: #00a4ff;
+  height: 90%;
+  margin-top:5%;
+  border-radius: 20rpx;
+  padding-top: 3rpx;
+}
+
+.notice icon{
+  position: absolute; 
+  top: 20rpx;
+ right: 20rpx;
+
+
+}
+.notice button{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+ background: repeating-linear-gradient(-45deg,  #00a4ff,  #00a4ff 5px, white 5px, white 10px);
+  border: 1px solid #00a4ff;
+}
+.notice button::after{
+  border: none;
+}
+
+.notice .title{
+  color: white;
+  font-size: 60rpx;
+  font-style: italic;
+  text-align: center;
+}
+
+.notice .content{
+  padding: 20rpx;
+  color: white;
+  font-size: 35rpx;
+  text-align: justify;
+ 
+}

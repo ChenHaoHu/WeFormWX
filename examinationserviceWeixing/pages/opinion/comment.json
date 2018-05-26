@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#00a4ff",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "考试交流",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}

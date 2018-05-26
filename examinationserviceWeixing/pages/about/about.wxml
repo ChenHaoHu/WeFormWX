@@ -1,0 +1,33 @@
+<!-- pages/About/about.wxml
+<view class='top'>
+  关于我们
+</view> -->
+
+<!--bg img  -->
+<view class='bg'>
+  <image src='../img/bg1.png'></image>
+</view>
+
+<view class='logo'>
+  <image src='../img/logo.png' mode='aspectFit'></image>
+</view>
+
+<!-- view -->
+<view class="main">
+  <view class='title'>辽宁石油化工大学考试报名小程序</view>
+  <view class='btns'>
+    <view class='img' bindtap='goNavigator' id="team">
+      <image src='../img/about_btn1.png' mode='aspectFit'></image>
+      <view>团队</view>
+    </view>
+    <view class='img' bindtap='goNavigator' id="suggestion">
+      <image src='../img/about_btn2.png' mode='aspectFit'></image>
+      <view>意见</view>
+    </view>
+    <view class='img' bindtap='goNavigator' id="message">
+      <image src='../img/about_btn3.png' mode='aspectFit'></image>
+      <view>消息</view>
+    </view>
+  </view>
+  <view class=' weui-footer'>Copyright © 2017-2018 Liao Month Team </view>
+</view>

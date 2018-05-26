@@ -1,0 +1,19 @@
+<view class='main'>
+  <form bindsubmit='send'>
+    <view class='input'>
+
+      <textarea placeholder='我认为：' name='content' maxlength="500" bindinput='getTextAreaNum'>
+        <view class='count'>{{textNum}}/500 </view>
+      </textarea>
+      <input type='text' placeholder='标签' name='label'></input>
+    </view>
+    <checkbox-group bindchange='niming'>
+      <label>
+        <checkbox value="匿名" disabled='{{disabledcheckbox}}' checked='{{checkedcheckbox}}' />匿名
+      </label>
+    </checkbox-group>
+    <view class='send'>
+      <button formType="submit">发送</button>
+    </view>
+  </form>
+</view>

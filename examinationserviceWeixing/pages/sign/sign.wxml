@@ -1,0 +1,182 @@
+<view class="main">
+  <form bindsubmit='sign'>
+    <view class='person'>
+      <view class='title'>个人信息</view>
+      <view class="table">
+        <view class='intro'>基本信息</view>
+        <view class="th input">
+          <view class='tr'>姓名：</view>
+          <view class='tr'>
+            <input type='text' placeholder='报名姓名' name="name"></input>
+          </view>
+        </view>
+        <view class="th input">
+          <view class='tr'>学院:</view>
+          <view class='tr'>
+            <!-- <input type='text' placeholder='计算机与通信工程学院'></input> -->
+            <picker bindchange="getcollege" value="{{collegevalue}}" range="{{college}}" name="college">
+              <view class="picker">
+                {{college[collegevalue]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class="th input">
+          <view class='tr'>专业:</view>
+          <view class='tr'>
+            <!-- <input type='text' placeholder='计算科学与技术'></input> -->
+            <picker bindchange="getmajor" value="{{majorvalue}}" range="{{major}}" name="major">
+              <view class="picker">
+                {{major[majorvalue]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+
+        <view class="th input">
+          <view class='tr'>班级:</view>
+          <view class='tr'>
+            <input type='text' placeholder='算机1601' name="className"></input>
+          </view>
+        </view>
+        <view class="th input">
+          <view class='tr'>学号:</view>
+          <view class='tr'>
+            <input type='number' placeholder='学号' name="studentId"></input>
+          </view>
+        </view>
+        <view class="th input">
+          <view class='tr'>身份证号:</view>
+          <view class='tr'>
+            <input type='idcard' placeholder='身份证号' name="idCard" bindinput='getidcard'  ></input>
+          </view>
+        </view>
+
+        <view class="th input">
+          <view class='tr'>出生年月:</view>
+          <view class='tr'>
+            <!-- <input type='text' placeholder='出生年月'></input> -->
+            <picker mode="date" value="{{borndate}}" start="1990-11 - 08" end="2018-11 - 08" bindchange="getborndate" name="bornDate">
+              <view class="picker">
+                {{borndate}}
+              </view>
+            </picker>
+          </view>
+        </view>
+
+
+
+        <view class="th input">
+          <view class='tr'>TEL:</view>
+          <view class='tr'>
+            <input type='number' placeholder='电话号码' name="tel"></input>
+          </view>
+        </view>
+
+
+
+        <view class="th input">
+          <view class='tr'>E-mail：</view>
+          <view class='tr'>
+            <input type='text' placeholder='E-mail' name="email"></input>
+          </view>
+        </view>
+
+        <view class='intro'>考试历史</view>
+
+        <view class="th input">
+          <view class='tr'>现有级别:</view>
+          <view class='tr'>
+            <!-- <input type='text' placeholder='现有级别'></input> -->
+            <view class="haveLevel">
+              <switch bindchange="changeswitch" name="oldTest" />
+
+            </view>
+          </view>
+        </view>
+
+
+        <!-- <view class="th input" wx:if='{{oldLevelboolean}}'>
+              <view class='tr'>级别信息:</view>
+              <view class='tr'>
+                <input type='text' placeholder='级别信息(级别+具体)' name="oldLevel"></input>
+              </view>
+            </view> -->
+        <view class="th" style='height:160rpx' wx:if='{{oldLevelboolean}}'>
+          <view class='tr'>已获级别:</view>
+          <view class='tr'>
+            <view class='result'>
+              <picker bindchange="changeoldlevel" value="oldlevelvalue" range="{{oldlevel}}" name="oldLevel">
+                <view class="picker">
+                  {{oldlevel[oldlevelvalue]}}
+                </view>
+              </picker>
+              <picker bindchange="changeolditem" value="olditemvalue" range="{{olditem}}" name="oldClass">
+                <view class="picker">
+                  {{olditem[olditemvalue]}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+
+        <view class="th input" wx:if='{{oldLevelboolean}}'>
+          <view class='tr'>取得时间:</view>
+          <view class='tr'>
+            <!-- <input type='text' placeholder='取得现有级别时间'></input> -->
+            <picker mode="date" value="{{oldleveldate}}" start="1990-11 - 08" end="2018-11 - 08" bindchange="getoldleveldate" name="oldDate">
+              <view class="picker">
+                {{oldleveldate}}
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class='intro'>本次报考类别选择</view>
+
+        <view class="th " style='height:160rpx'>
+          <view class='tr'>类别：</view>
+          <view class='tr'>
+            <view class='result'>
+              <picker bindchange="changelevel" value="signlevelvalue" range="{{signlevel}}" name="nowLevel">
+                <view class="picker">
+                  {{signlevel[signlevelvalue]}}
+                </view>
+              </picker>
+              <picker bindchange="changeitem" value="signitemvalue" range="{{signitem}}" name="nowClass">
+                <view class="picker">
+                  {{signitem[signitemvalue]}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view>
+
+
+        <view class='th data'>
+          <view class='imgdata'>
+            <view class='intro'>照片信息</view>
+            <view  class="{{ImgWidth < 295?'red':'none'}}">宽度:  {{ImgWidth}}px</view>
+            <view  class="{{ImgHeight < 413?'red':'none'}}">高度:  {{ImgHeight}}px</view>
+            <view  class="{{ImgType != 'jpeg'?'red':'none'}}">类型:  {{ImgType}}</view>
+              <view  class="{{ImgSize > 60 || ImgSize == 0?'red':'none'}}">大小:  {{ImgSize}}k</view>
+ <view  wx:if = "{{imgok}}" style='color:red;size:40rpx;'>初检成功</view>
+          </view>
+
+          <view class='photo '>
+            <!--style="width:{{ImgWidth/2+'rpx'}}; height:{{ImgHeight/2+'rpx'}}; background-color: #123334;"  -->
+            <image src="{{src}}" mode='aspectFit' bindtap='choose'></image>
+          </view>
+          
+        </view>
+
+        <button  wx:if = "{{imgok}}"  class='send' form-type="submit" >提交</button>
+      </view>
+
+    </view>
+
+
+  </form>
+
+
+</view>

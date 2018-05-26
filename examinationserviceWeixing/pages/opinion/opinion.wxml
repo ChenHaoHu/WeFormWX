@@ -1,0 +1,68 @@
+<view class='choose'>
+  <view class="{{choose=='0'?'choose1':'choose2'}}" bindtap='choose'>分享</view>
+  <view class="{{choose=='1'?'choose1':'choose2'}}" bindtap='choose'>问题</view>
+</view>
+
+<view class='share' wx-if="{{choose=='0'}}">
+
+  <scroll-view  bindscrolltolower="bindscrolltolower" scroll-y = "true">
+    <view class='main' wx:for="{{opinions}}" wx:key="">
+      <view class='item' bindtap='lookmore' id='{{item.id}}'>
+        <view class='user'>
+          <view class='image'>
+            <image src='{{item.iconUrl}}' mode='aspectFit'></image>
+          </view>
+          <view class='userData'>
+            <view class='name'>{{item.name}}</view>
+            <view class="date">{{item.date}}</view>
+            <view class='intro'>{{item.intro}}</view>
+          </view>
+        </view>
+        <view class='triangle'>
+          <image src='../img/triangle.png'></image>
+        </view>
+        <view class='contain'>
+          <view> {{item.contain}}
+          </view>
+        </view>
+      </view>
+      <view class='operation'>
+        <view class='zan'>
+          <image src="../img/support2.png" mode='aspectFit'></image>
+          <view class='zannum' style='  line-height: 70rpx;'>{{item.supportnum}}</view>
+        </view>
+        <view class='opinion'>
+          <image src="../img/comment.png" mode='aspectFit'></image>
+          <view class='opinionnum' style='  line-height: 70rpx;'>{{item.commentNum}}</view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class='add'>
+      <image src='../img/add.png' mode='aspectFit' bindtap='add'></image>
+    </view>
+
+
+
+  </scroll-view>
+
+
+
+</view>
+
+<view class='question' wx-if="{{choose=='1'}}">
+
+  <view class='queslist' wx:for="{{questions}}" wx:key="">
+    <view class='list_item'>
+      <view class='item_title'>
+        {{item.problem}}
+      </view>
+      <view class='item_contain'>
+        {{item.answer}}
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,49 @@
+<!--pages/opiniondetail/opiniondetail.wxml-->
+<view class='main'>
+
+  <view class='data'>
+    <view class='con'>
+      <view class='label'>{{opiniondata.label}}</view>
+      <view class='content'>{{opiniondata.content}}</view>
+    </view>
+    <view class='userimg'>
+      <image src='{{opiniondata.userImg}}'> </image>
+    </view>
+    <view class='username'>{{opiniondata.userName}}</view>
+  </view>
+  <view class='operation'>
+    <view class='zan'>
+      <image src="{{zanimg}}" bindtap='zan' id="{{item.id}}  " mode='aspectFit'></image>
+      <view class='zannum' style='  line-height: 70rpx;'>{{zannum}}</view>
+    </view>
+    <view class='opinion'>
+      <image src="{{'../img/comment.png'}}" mode='aspectFit'></image>
+      <view class='opinionnum' style='  line-height: 70rpx;'>{{commentnum}}</view>
+    </view>
+  </view>
+  <view class='explain'>精选评论({{commentnum}})</view>
+  <view class='opinions'>
+    <view class='item' wx:for="{{comments}}" wx:key="ds">
+      <view class='icon'>
+        <image src='{{item.iconurl}}'></image>
+      </view>
+      <view class='content'>
+        <view class='head'>{{item.name}}</view>
+        <view class='body'>
+          <view class='con'>{{item.content}}</view>
+
+        </view>
+        <view class='bottom'>
+          <view class='date'>{{item.date}}</view>
+          <view class='list' id="{{item.id}}">对话列表</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class='input'>
+  <input type='text' placeholder='添加评论' bindinput='getinput' value='{{input}}'></input>
+ <image src='../img/commentsend.png' bindtap='sendcomment' ></image>
+</view>

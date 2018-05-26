@@ -1,0 +1,10 @@
+<view class="main">
+  <view class='contain'>
+    <view class='con' >
+    <view class='title'>{{title}}</view>
+    <view class='data'>{{data}}</view>
+    <view class='job'>{{job}}</view>
+    </view>
+    <view class='next' bindtap='next' id = "{{id}}">下一页</view>
+  </view>
+</view>

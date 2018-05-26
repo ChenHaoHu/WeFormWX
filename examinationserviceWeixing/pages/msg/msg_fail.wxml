@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="warn" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">报名失败</view>
+            <view class="weui-msg__desc">对不起，您报名失败，请过半小时重试，如果不行，可能是服务器出现故障，请联系775656764@qq.com，真挚的表示对不起！<navigator url="" class="weui-msg__link"></navigator></view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <!-- <view class="weui-btn-area">
+                <button class="weui-btn" type="primary">推荐操作</button>
+                <button class="weui-btn" type="default">辅助操作</button>
+            </view> -->
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                    <navigator url="" class="weui-footer__link">撩月团队</navigator>
+                </view>
+                <view class="weui-footer__text">Copyright © 2017-2018 Liao Month Team</view>
+            </view>
+        </view>
+    </view>
+</view>

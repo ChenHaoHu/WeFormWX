@@ -1,0 +1,17 @@
+
+
+<view class='main'>
+
+      <view class='sections' wx:for="{{data}}" wx:key="">
+          <view class='title'>{{item.status}}</view>
+          <view class='contain'>
+            <view class='item' wx:for="{{item.data}}"  id="{{item.category}}%{{item.status}}"
+              wx:key="" bindtap='todetail'>
+              <view class='icon'>{{item.category[0]}}</view>
+              <view class='name'>{{item.category}}</view>
+          </view>
+        </view>
+      </view>
+
+
+</view>

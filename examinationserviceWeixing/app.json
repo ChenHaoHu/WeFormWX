@@ -1,0 +1,60 @@
+{
+  "pages": [
+     
+    "pages/main/main",
+    "pages/team/team",
+    "pages/sign/sign",
+"pages/opinion/opinion",
+    "pages/data/data",
+    "pages/send/send",
+    "pages/opiniondetail/opiniondetail",
+    "pages/notice/notice",
+    "pages/datadetail/datadetail",
+    "pages/msg/msg_fail",
+    "pages/msg/msg_success",
+    "pages/about/about",
+
+    "pages/test/test",
+    "pages/suggest/suggest",
+    "pages/message/message"
+  ],
+  "window": {
+    "navigationBarTitleText": "啃芝士",
+    "navigationBarBackgroundColor": "#00a4ff",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#00a4ff",
+    "onReachBottomDistance": 10
+  },
+  "tabBar": {
+    "borderStyle": "#00a4ff",
+    "color": "#ADADAD",
+    "selectedColor": "#00a4ff",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "iconPath": "pages/img/sign1.png",
+        "selectedIconPath": "pages/img/sign2.png",
+        "text": "报名",
+        "pagePath": "pages/main/main"
+      },
+      {
+        "iconPath": "pages/img/mail1.png",
+        "selectedIconPath": "pages/img/mail2.png",
+        "text": "资料",
+        "pagePath": "pages/data/data"
+      },
+      {
+        "iconPath": "pages/img/sugg1.png",
+        "selectedIconPath": "pages/img/sugg2.png",
+        "text": "交流",
+        "pagePath": "pages/opinion/opinion"
+      },
+      {
+        "iconPath": "pages/img/about1.png",
+        "selectedIconPath": "pages/img/about2.png",
+        "text": "关于",
+        "pagePath": "pages/about/about"
+      }
+    ]
+  }
+}

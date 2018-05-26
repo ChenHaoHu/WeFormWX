@@ -1,0 +1,81 @@
+/* pages/suggest/suggest.wxss */
+
+.top {
+  width: 100%;
+  height: 130rpx;
+  line-height: 150rpx;
+  text-align: center;
+  color: white;
+  background-color: #00a4ff;
+}
+
+.main {
+  width: 100%;
+  height: 1200rpx;
+  background-color: #6b6b77;
+  padding-top: 20rpx;
+}
+
+.table {
+  width: 96%;
+  height: 95%;
+  margin-left: 2%;
+  background-color: #bdd9e9;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+ justify-content: space-around;
+}
+
+.th {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.thtext{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+}
+.th_are {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300rpx;
+  line-height: 60rpx;
+}
+
+input {
+  background-color: #e5e9ec;
+    width: 400rpx;
+     border-radius: 20rpx;
+     padding-left: 30rpx;
+}
+
+textarea {
+  background-color: #e5e9ec;
+  width: 400rpx;
+  border-radius: 20rpx;
+  padding-left: 30rpx;  
+  padding-right: 30rpx;
+}
+
+.text{
+  width: 60%;
+  margin-left: 10%;
+  height: 200rpx;
+  font-size: 30rpx;
+  font-style: italic;
+}
+
+button{
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: palevioletred;
+
+}

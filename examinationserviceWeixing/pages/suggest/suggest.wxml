@@ -1,0 +1,53 @@
+<!--pages/suggest/suggest.wxml-->
+
+<!-- <view class='top'>
+  我的意见
+</view> -->
+
+
+<view class='main'>
+    
+
+  <form>
+    <view class='table'>
+
+
+ <view class='thtext'>
+        <view class='tr'>Tips:</view>
+        <view class="text">真挚的感谢您给我们撩月团队带来了宝贵的意见和建议，我们会认真对待您的看法，如果观点被采纳，我们会通过邮件来联系您！！！</view>
+      </view>
+
+      <view class='th'>
+        <view class='tr'>标题：</view>
+        <view class='tr'>
+          <input placeholder='title'></input>
+        </view>
+      </view>
+
+      <view class='th_are'>
+        <view class='tr'>内容：</view>
+        <view class='tr'>
+          <textarea></textarea>
+        </view>
+      </view>
+
+      <view class='th'>
+        <view class='tr'>email:</view>
+        <view class='tr'>
+          <input placeholder='email'></input>
+        </view>
+      </view>
+
+      <view class='th'>
+
+        <button form-type='submit'>提交</button>
+
+      </view>
+
+
+
+    </view>
+
+  </form>
+
+</view>

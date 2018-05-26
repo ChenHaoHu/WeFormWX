@@ -1,0 +1,36 @@
+<!--pages/datadetail/datadetail.wxml-->
+<!-- <view class='top'>
+ <view class='back' bindtap='back'> <image src='../img/back.png' mode='aspectFit'></image></view>
+  {{lesson.name}}资料
+</view> -->
+
+<view class='main'>
+  <!-- title -->
+  <view class='title'>
+    <view class='image'>
+      <image src='../img/logo.png' mode='aspectFit'></image>
+    </view>
+    <view class='data'>
+      <view class='name'>{{lesson.name}}</view>
+      <view>
+        <view class='type'>类型：{{lesson.type}}</view>
+        <view class='date'>最近更新：{{maxdate}}</view>
+      </view>
+    </view>
+  </view>
+
+  <button class='share' open-type='share'>分享给好友</button>
+  <view class='intro'>历年软考{{lesson.type}}{{lesson.name}}试卷及答案</view>
+
+  <view class='list' wx:for="{{filelist}}" wx:key="index">
+
+    <view class='item' bindtap='getfile' id='{{item.id}}%{{item.fileid}}'>
+     <view class='right'>{{item.date}}</view>
+      <view class='left'>
+        <view class='paperid'>{{index+1}}.</view>
+        <view class='papername'>{{item.filename}}</view>
+      </view>
+    </view>
+     
+  </view>
+</view>

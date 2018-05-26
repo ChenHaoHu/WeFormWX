@@ -1,0 +1,33 @@
+<!--pages/message/message.wxml-->
+ <!-- <view class='top'>
+ <view class='back' bindtap='back'> <image src='../img/back.png' mode='aspectFit'></image></view>
+    我的消息
+  </view> -->
+
+<view class='main'>
+  <view class='message'>
+  <view class='type'>
+  <view class='icon'>
+  <image src="../img/message.png"  ></image>
+  </view>
+  <view class='text'>报名</view>
+  </view>
+  <view class='data'>
+  <view class='title'>
+
+  <view>报名成功</view></view>
+  <view class='contain'>
+
+  <view class='left'> 
+ <view class='con'> 学号为：1611010102的同学报名成功</view>
+ <view class='date'>2017-8-8</view>
+  </view>
+  <view class='right'>
+  <view class='read'>已读</view>
+  </view>
+  
+  </view>
+  </view>
+  </view>
+
+</view>
